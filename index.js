@@ -733,7 +733,7 @@ function refuseIt(x, y, z) {
           var txt5 = "Otimização de um site existente";
           var txt6 = "Construindo um site de e-commerce em JavaScript";
           var txt7 = "Construindo um API seguro para uma aplicação de revisão de restaurante";
-          var txt8 = "Criação de uma social network corporativa ";
+          var txt8 = "Criação de uma social network corporativa";
           var txt9 = "Projetos";
           var txt10 = "Graduação";
         }
