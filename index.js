@@ -601,7 +601,7 @@ function refuseIt(x, y, z) {
             setTimeout(function() {
 
               document.getElementById("photo").style.animation = 'iconsComp 2s forwards';
-              document.getElementById("photo").src = 'assets/img/muro.jpg';
+              document.getElementById("photo").src = 'assets/img/muro.JPG';
               style.sheet.insertRule('#curtain{top: 17% !important; left: 19% !important;width: 61% !important;z-index:0 !important;}');
               style.sheet.insertRule('h1{z-index:1;}');
               document.getElementById("slider").remove();
