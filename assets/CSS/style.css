@@ -1,0 +1,1154 @@
+
+
+h1{
+  display:none;
+    -webkit-animation:tab1 3s;
+            animation:tab1 3s;}
+    #fiddle{
+      display:none;
+    }
+    #sound{
+      opacity: 0.7;
+      color:#0c992a;
+    cursor:pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;}
+    
+    body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      line-height: 18px;
+      
+    }
+    
+    #showCandidat{display:none;
+    z-index:200;
+    -webkit-animation:tab1 3s;
+            animation:tab1 3s;}
+    
+    #photo {
+      width: 13%;
+      min-width: 100px;
+      position: absolute;
+      left: 37px;
+      top: 140px;
+      border: solid 2px black;
+    }
+    #loadInit{font-size:1.2rem; 
+    text-align:center; 
+    width:100%;
+    position:absolute;
+    top:24%;
+    font-weight:bold;
+      
+    }
+    .paging:hover{
+      -webkit-animation: scaleText 1s forwards;
+              animation: scaleText 1s forwards;
+    }
+    #acceptTxt {
+      font-size: 2rem; 
+      text-align:initial; 
+      margin: auto; 
+      line-height:35px !important; 
+      color: white;
+      white-space: nowrap;
+        padding: 10px;
+        background-color: black;
+        border: solid 1px white;
+        border-radius: 25px;
+        list-style: none;
+        margin-left: 23%;
+      
+    }
+    .textLoad{
+      font-family: 'Lobster', cursive;
+      position:absolute;
+      opacity:0 ;
+      -webkit-animation: sortientree 5s forwards;
+              animation: sortientree 5s forwards;
+      top:20%;
+      right:unset !important;
+      width:100%;
+      font-weight: bolder;
+      
+    }
+    
+    #idea {
+      -webkit-animation: tab1 1s forwards;
+              animation: tab1 1s forwards;
+      width: 60px;
+      position: relative;
+      left: 3px;
+      top: 3px;
+     
+      padding: 11px 12px;
+      padding-left: 16px;
+      height: 57px;
+    }
+    #linkShare{
+    display:none;
+    position:absolute;
+    z-index:200;
+    top:45%; 
+    border: 2px solid white; 
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
+    border-radius: 20px;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    text-align:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20%;
+    }
+    .linksPartage{
+      padding:7px;
+    }
+    #load {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      text-align: center;
+      font-size: 1.3rem;
+      z-index: 100;
+    }
+    a:link{
+      color:white;
+      text-decoration: unset;
+      line-height: 30px;
+      
+    }
+    a:visited{
+      color:white;
+      
+    }
+    
+    button {
+      text-align: center;
+      font-size: 2rem;
+    }
+    
+    #card {
+      margin-top: 8%;
+      width: 50%;
+      text-align: center;
+      font-size: 2rem;
+    line-height: 2rem;
+    
+    }
+    table{
+      margin-bottom: 20px;
+    }
+    .tab1{  
+      -webkit-animation: tab1 5s;  
+              animation: tab1 5s;
+      color:white;
+      font-family: 'Poppins', sans-serif;
+      width:55%;
+      min-height: 350px;
+      margin-top: 75px;
+      font-size: 1.5rem;
+    }
+    #tab2{  
+      display:none;
+      -webkit-animation: tab1 5s;
+              animation: tab1 5s;
+      color:white;
+      font-family: 'Poppins', sans-serif;
+      width:55%;
+      min-height: 350px;
+      font-size: 1.5rem;
+      
+    }
+    .iconsComp{
+      -webkit-animation: iconsComp 5s;
+              animation: iconsComp 5s;
+      width: 71%;
+      max-width: 50px;
+      margin-right: 10px;
+      margin-top: 10px;;
+    }
+      
+    
+    td {
+      border: solid 1px black;
+    }
+    
+    .lds-facebook {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    
+    .lds-facebook div {
+    
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      width: 16px;
+      background: black;
+      -webkit-animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+              animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+    
+    .lds-facebook div:nth-child(1) {
+      left: 8px;
+      -webkit-animation-delay: -0.24s;
+              animation-delay: -0.24s;
+    }
+    
+    .lds-facebook div:nth-child(2) {
+      left: 32px;
+      -webkit-animation-delay: -0.12s;
+              animation-delay: -0.12s;
+    }
+    
+    .lds-facebook div:nth-child(3) {
+      left: 56px;
+      -webkit-animation-delay: 0;
+              animation-delay: 0;
+    }
+    
+    
+    @-webkit-keyframes lds-facebook {
+      0% {
+        top: 8px;
+        height: 64px;
+      }
+    
+      50%,
+      100% {
+        top: 24px;
+        height: 32px;
+      }
+    }
+    
+    
+    @keyframes lds-facebook {
+      0% {
+        top: 8px;
+        height: 64px;
+      }
+    
+      50%,
+      100% {
+        top: 24px;
+        height: 32px;
+      }
+    }
+    @-webkit-keyframes buttonerror {
+     
+      0% {
+      border: 3px solid red;
+      -webkit-transform: translate(10px, 5px);
+              transform: translate(10px, 5px);} 
+      50%{ -webkit-transform: translate(-10px, -5px); transform: translate(-10px, -5px)}
+      100% {
+      -webkit-transform:translate(0px, 0px);
+              transform:translate(0px, 0px);
+      border-color: black;}
+      }
+    @keyframes buttonerror {
+     
+      0% {
+      border: 3px solid red;
+      -webkit-transform: translate(10px, 5px);
+              transform: translate(10px, 5px);} 
+      50%{ -webkit-transform: translate(-10px, -5px); transform: translate(-10px, -5px)}
+      100% {
+      -webkit-transform:translate(0px, 0px);
+              transform:translate(0px, 0px);
+      border-color: black;}
+      }
+    
+    
+    
+    
+    @-webkit-keyframes hit {
+     
+      0% {opacity:0;
+      -webkit-transform: translate(10px, 5px);
+              transform: translate(10px, 5px);
+      border-color:red;}
+      50%{ -webkit-transform: translate(-10px, -5px); transform: translate(-10px, -5px)}
+      100% {opacity:1;
+      -webkit-transform:translate(0px, 0px);
+              transform:translate(0px, 0px);
+      border-color: black;}
+      
+    
+    
+    }
+    
+    
+    
+    
+    @keyframes hit {
+     
+      0% {opacity:0;
+      -webkit-transform: translate(10px, 5px);
+              transform: translate(10px, 5px);
+      border-color:red;}
+      50%{ -webkit-transform: translate(-10px, -5px); transform: translate(-10px, -5px)}
+      100% {opacity:1;
+      -webkit-transform:translate(0px, 0px);
+              transform:translate(0px, 0px);
+      border-color: black;}
+      
+    
+    
+    }
+    @-webkit-keyframes fenetre {
+     
+      0% {opacity:0;
+      
+      -webkit-transform:scale(0.4) translate(-66px, 0px);
+      
+              transform:scale(0.4) translate(-66px, 0px);
+      }
+        15%{
+         -webkit-transform:scale(0.7) translate(-31px, 0px);
+                 transform:scale(0.7) translate(-31px, 0px);
+      } 
+      30%{
+         -webkit-transform: translate(60px, 0px);
+                 transform: translate(60px, 0px);
+      } 
+      45%{ -webkit-transform: translate(133px, 0px); transform: translate(133px, 0px)}
+      60%{ -webkit-transform:scale(1.3) translate(-20px, 0px); transform:scale(1.3) translate(-20px, 0px)}
+      75%{ -webkit-transform:scale(0.8) translate(-69px, 0px); transform:scale(0.8) translate(-69px, 0px)}
+      100% {opacity:1 ;
+      -webkit-transform:scale(1) translate(0px, 0px);
+              transform:scale(1) translate(0px, 0px);
+      }
+      
+    
+    
+    }
+    @keyframes fenetre {
+     
+      0% {opacity:0;
+      
+      -webkit-transform:scale(0.4) translate(-66px, 0px);
+      
+              transform:scale(0.4) translate(-66px, 0px);
+      }
+        15%{
+         -webkit-transform:scale(0.7) translate(-31px, 0px);
+                 transform:scale(0.7) translate(-31px, 0px);
+      } 
+      30%{
+         -webkit-transform: translate(3px, 0px);
+                 transform: translate(3px, 0px);
+      } 
+      45%{ -webkit-transform: translate(1px, 0px); transform: translate(1px, 0px)}
+      60%{ -webkit-transform:scale(1.3) translate(-20px, 0px); transform:scale(1.3) translate(-20px, 0px)}
+      75%{ -webkit-transform:scale(0.8) translate(-69px, 0px); transform:scale(0.8) translate(-69px, 0px)}
+      100% {opacity:1 ;
+      -webkit-transform:scale(1) translate(0px, 0px);
+              transform:scale(1) translate(0px, 0px);
+      }
+      
+    
+    
+    }
+    
+    @-webkit-keyframes tab1 {
+     
+      0% {opacity:0;}
+      100% {opacity:1;}
+      
+    
+    
+    }
+    
+    @keyframes tab1 {
+     
+      0% {opacity:0;}
+      100% {opacity:1;}
+      
+    
+    
+    }
+    @-webkit-keyframes iconsComp {
+     
+      0% {opacity:0;}
+      100% {opacity:1;}
+      
+    
+    }
+    @keyframes iconsComp {
+     
+      0% {opacity:0;}
+      100% {opacity:1;}
+      
+    
+    }
+    @-webkit-keyframes hide {
+     
+      0% {opacity:1;}
+      100% {opacity:0;}
+      
+    
+    }
+    @keyframes hide {
+     
+      0% {opacity:1;}
+      100% {opacity:0;}
+      
+    
+    }
+    @-webkit-keyframes sorti {
+     
+      0% {opacity:0.4;}
+      50%{opacity: 1;}
+      100% {opacity:0;}
+      
+    
+    }
+    @keyframes sorti {
+     
+      0% {opacity:0.4;}
+      50%{opacity: 1;}
+      100% {opacity:0;}
+      
+    
+    }
+    @-webkit-keyframes sortientree {
+     
+      0% {opacity:0;}  
+      50% {opacity:1;}
+      100% {opacity:0;}  
+      
+      
+    
+    }
+    @keyframes sortientree {
+     
+      0% {opacity:0;}  
+      50% {opacity:1;}
+      100% {opacity:0;}  
+      
+      
+    
+    }
+    @-webkit-keyframes akuma {
+     
+      0% {-webkit-transform: translateX(44%);transform: translateX(44%);}
+      100% { -webkit-transform: translateX(-48%); transform: translateX(-48%);}
+      
+    
+    }
+    @keyframes akuma {
+     
+      0% {-webkit-transform: translateX(44%);transform: translateX(44%);}
+      100% { -webkit-transform: translateX(-48%); transform: translateX(-48%);}
+      
+    
+    }
+    @-webkit-keyframes curtainClose {
+     
+      0% {
+      -webkit-transform: scaleX(1) ;
+              transform: scaleX(1) ;}
+      
+      90%{-webkit-transform:scaleX(0.1) scaleY(0.9);transform:scaleX(0.1) scaleY(0.9)}
+      100% {
+      -webkit-transform: scaleX(0) scaleY(0) ;
+              transform: scaleX(0) scaleY(0) ;}
+      
+    
+    }
+    @keyframes curtainClose {
+     
+      0% {
+      -webkit-transform: scaleX(1) ;
+              transform: scaleX(1) ;}
+      
+      90%{-webkit-transform:scaleX(0.1) scaleY(0.9);transform:scaleX(0.1) scaleY(0.9)}
+      100% {
+      -webkit-transform: scaleX(0) scaleY(0) ;
+              transform: scaleX(0) scaleY(0) ;}
+      
+    
+    }
+    @-webkit-keyframes framesButton {
+     
+      0% {opacity:0;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);}
+      100% {opacity:1;
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg)}
+      
+    
+    }
+    @keyframes framesButton {
+     
+      0% {opacity:0;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);}
+      100% {opacity:1;
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg)}
+      
+    
+    }
+    @-webkit-keyframes shake {
+     
+      0% {
+      -webkit-transform: translateX(-1px);
+              transform: translateX(-1px);}
+      100% {
+      -webkit-transform: translateX(1px);
+              transform: translateX(1px);}
+      
+    
+    }
+    @keyframes shake {
+     
+      0% {
+      -webkit-transform: translateX(-1px);
+              transform: translateX(-1px);}
+      100% {
+      -webkit-transform: translateX(1px);
+              transform: translateX(1px);}
+      
+    
+    }
+    @-webkit-keyframes invalid{
+      0%{
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+        border: solid yellow;
+      }
+      66%{-webkit-transform: translateX(10px) ;transform: translateX(10px) ;
+          border: solid red;
+          }
+      
+      100%{
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+        border-width: 2px;
+        border-style: inset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+      }
+      }
+    @keyframes invalid{
+      0%{
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+        border: solid yellow;
+      }
+      66%{-webkit-transform: translateX(10px) ;transform: translateX(10px) ;
+          border: solid red;
+          }
+      
+      100%{
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+        border-width: 2px;
+        border-style: inset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        -o-border-image: initial;
+           border-image: initial;
+      }
+      }
+    
+    @-webkit-keyframes scaleIcon{
+      0%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100%{
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+      }
+      }
+    
+    @keyframes scaleIcon{
+      0%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100%{
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+      }
+      }
+      
+      @-webkit-keyframes scaleText{
+      0%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        
+      }
+      100%{
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        color: red;
+          }  
+      
+    }
+      
+      @keyframes scaleText{
+      0%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        
+      }
+      100%{
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        color: red;
+          }  
+      
+    }
+     @-webkit-keyframes ok{
+      0%{
+        -webkit-transform: translate(-75%, -123px) scale(0.3);
+                transform: translate(-75%, -123px) scale(0.3);
+        
+        
+      }
+      100%{
+        -webkit-transform: translate(0px, 0px) scale(1);
+                transform: translate(0px, 0px) scale(1);
+        
+        color: black;
+          }  
+      
+    }
+     @keyframes ok{
+      0%{
+        -webkit-transform: translate(-75%, -123px) scale(0.3);
+                transform: translate(-75%, -123px) scale(0.3);
+        
+        
+      }
+      100%{
+        -webkit-transform: translate(0px, 0px) scale(1);
+                transform: translate(0px, 0px) scale(1);
+        
+        color: black;
+          }  
+      
+    }
+     @-webkit-keyframes lifehit{
+      0%{
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        width:1%;
+      }
+      100%{
+        width:30%;
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+       
+          }  
+          }
+     @keyframes lifehit{
+      0%{
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        width:1%;
+      }
+      100%{
+        width:30%;
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+       
+          }  
+          }
+           @-webkit-keyframes lifehit2{
+      0%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width: 30%;
+        
+      }
+      100%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width: 90%;
+       
+          } 
+          
+      
+    }
+           @keyframes lifehit2{
+      0%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width: 30%;
+        
+      }
+      100%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width: 90%;
+       
+          } 
+          
+      
+    }
+           @-webkit-keyframes lifehit3{
+      0%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width:90%;
+        
+      }
+      100%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width:100%;
+       
+          } 
+          
+      
+    }
+           @keyframes lifehit3{
+      0%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width:90%;
+        
+      }
+      100%{
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        width:100%;
+       
+          } 
+          
+      
+    }
+    @-webkit-keyframes blink {
+        /**
+         * At the start of the animation the dot
+         * has an opacity of .2
+         */
+        0% {
+          opacity: .2;
+        }
+        /**
+         * At 20% the dot is fully visible and
+         * then fades out slowly
+         */
+        20% {
+          opacity: 1;
+        }
+        /**
+         * Until it reaches an opacity of .2 and
+         * the animation can start again
+         */
+        100% {
+          opacity: .2;
+        }
+    }
+    @keyframes blink {
+        /**
+         * At the start of the animation the dot
+         * has an opacity of .2
+         */
+        0% {
+          opacity: .2;
+        }
+        /**
+         * At 20% the dot is fully visible and
+         * then fades out slowly
+         */
+        20% {
+          opacity: 1;
+        }
+        /**
+         * Until it reaches an opacity of .2 and
+         * the animation can start again
+         */
+        100% {
+          opacity: .2;
+        }
+    }
+    
+    .lds-heart {
+      display:none;
+      /*display: inline-block;*/
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      -webkit-transform: rotate(45deg) scale(2.5);
+          -ms-transform: rotate(45deg) scale(2.5);
+              transform: rotate(45deg) scale(2.5);
+      -webkit-transform-origin: 40px 40px;
+          -ms-transform-origin: 40px 40px;
+              transform-origin: 40px 40px;
+      top:45%;
+    }
+    .lds-heart div {
+          background-color: black !important;
+      top: 32px;
+      left: 32px;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: #fff;
+      -webkit-animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+              animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .lds-heart div:after,
+    .lds-heart div:before {
+          background-color: black;
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: #fff;
+    }
+    .lds-heart div:before {
+          background-color: black;
+      left: -24px;
+      border-radius: 50% 0 0 50%;
+    }
+    .lds-heart div:after {
+          background-color: black;
+      top: -24px;
+      border-radius: 50% 50% 0 0;
+    }
+    @-webkit-keyframes lds-heart {
+      0% {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95);
+      }
+      5% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+      39% {
+        -webkit-transform: scale(0.85);
+                transform: scale(0.85);
+      }
+      45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      60% {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95);
+      }
+      100% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+      }
+    }
+    @keyframes lds-heart {
+      0% {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95);
+      }
+      5% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+      39% {
+        -webkit-transform: scale(0.85);
+                transform: scale(0.85);
+      }
+      45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      60% {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95);
+      }
+      100% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+      }
+    }
+    .saving span {
+        /**
+         * Use the blink animation, which is defined above
+         */
+        -webkit-animation-name: blink;
+                animation-name: blink;
+        /**
+         * The animation should take 1.4 seconds
+         */
+        -webkit-animation-duration: 1.4s;
+                animation-duration: 1.4s;
+        /**
+         * It will repeat itself forever
+         */
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        /**
+         * This makes sure that the starting style (opacity: .2)
+         * of the animation is applied before the animation starts.
+         * Otherwise we would see a short flash or would have
+         * to set the default styling of the dots to the same
+         * as the animation. Same applies for the ending styles.
+         */
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+    }
+    
+    .saving span:nth-child(2) {
+        /**
+         * Starts the animation of the third dot
+         * with a delay of .2s, otherwise all dots
+         * would animate at the same time
+         */
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+    
+    .saving span:nth-child(3) {
+        /**
+         * Starts the animation of the third dot
+         * with a delay of .4s, otherwise all dots
+         * would animate at the same time
+         */
+        -webkit-animation-delay: .4s;
+                animation-delay: .4s;
+    }
+    
+    @media screen and (max-width: 750px){ 
+    #weatherBox{
+         z-index: 200;
+      
+    }}
+    
+    @media screen and (max-width: 650px){ 
+    #acceptTxt{
+      margin-left:0% !important;
+      width: -webkit-fit-content !important;
+      width: -moz-fit-content !important;
+      width: fit-content !important;
+      font-size: 1.6rem; 
+      white-space: unset !important;
+    }
+    #weather{
+      width: 42%;
+    }
+    #codePostal{
+      width:42%;
+    }
+    #artist{
+      width:42%;
+    }
+    
+    ul{
+      line-height:23px !important;
+      width: 100% !important;}
+    
+    .buble{ 
+    display:none;
+    }
+    #icons2{
+      display: none !important;
+    }
+    #icons{
+      width:101px !important;
+      
+    }
+    .icons{
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .textLoad{
+      color:#0c992a;
+      top:-58px;
+      right:36.2%;  
+      
+    }
+    
+    #slider{
+       left: 25px;
+        top: unset !important;
+        bottom: 37% !important;
+        width: 16%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient:horizontal !important;
+        -webkit-box-direction:normal !important;
+            -ms-flex-direction:row !important;
+                flex-direction:row !important;
+    }
+    #listArtists{
+      position:fixed !important;
+      top:9% !important;
+    }
+    .lds-heart{
+      top:39%;
+    }
+    #form{
+      width:63%;
+      top: 43% !important;
+    }
+    #photo{
+      left: 29px;
+      top: 10px;
+      min-width: 50px;
+      width: 10%;
+    }
+    #card{
+      width:unset;  
+      
+    }
+    #list{
+      position:fixed !important;
+      left:43px !important;
+      top:0% !important;
+    }
+    .paging{
+      padding:5px;
+    }
+    
+    .joeur{
+      margin-left: 25px;
+    }
+    #show{
+      position:absolute;
+      width:120% !important;
+      height: 60px !important;
+      
+    }
+    h1{
+      font-size: 1.2em !important;
+    }
+    #column{
+     text-align: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 10%;
+        left:5px;
+      }
+      button{
+       padding: 5px 14px !important;
+      }
+    
+    .tab1{
+      width:50% !important;
+      min-height: unset !important;
+      margin-left: 10%;
+    }
+    li{
+      font-size: 0.8em !important;
+    }
+    #idea{
+      width: 80px !important;
+      height: 80px !important;
+      position:absolute !important;
+      top: 25% !important;
+      left: 40% !important;
+      z-index:200;
+          background-color: white;
+        border-radius: 20px;
+        border: solid 1px black;
+    
+      
+    }
+    #ideaici{
+      background-image:url('') !important;
+      position:absolute !important;
+      top: 25% !important;
+      left: 40% !important;
+      z-index:200;
+      
+    }
+    .jouer{
+      margin-left: 24px !important;
+    }
+    #times {
+          top: 23.5% !important;
+            font-size: 2rem !important;
+    }
+    #imgFrame{
+      right: 39% !important;
+      top: 100% !important;
+      
+        width: -webkit-fit-content;
+      
+        width: -moz-fit-content;
+      
+        width: fit-content;
+    
+      
+    }
+    #column {
+      left: 5px !important;
+    }
+    #ici{
+      top: 55px !important;
+    }
+    
+    .iconsComp{
+      width:68% !important;
+      margin-right: 3px !important;
+      margin-top: 0px !important;
+    }
+    .media-container {display:none !important; }
+    
+        #buttons{
+          -webkit-box-orient:vertical !important;
+          -webkit-box-direction:normal !important;
+              -ms-flex-direction:column !important;
+                  flex-direction:column !important;
+        position: fixed !important;
+        right: unset !important;   
+        left: 0px !important;
+        
+            max-width: 77%;
+    }
+    }
+    @media screen and (max-width: 110px){
+      #fiddle{
+        display:block;
+      }
+    }
