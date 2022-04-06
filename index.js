@@ -204,7 +204,7 @@ function start() {
 
     document.querySelector(".lds-heart").style.display = "none";
     document.querySelector("#showCandidat").style.display = "block"
-  }, 4000)
+  }, 45000)
 }
 
 let timer = 0;
