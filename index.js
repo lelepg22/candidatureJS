@@ -453,17 +453,24 @@ function refuseIt(x, y, z) {
 
 
         /*  style.sheet.insertRule('{}')'*/
+        
+        if (window.innerWidth < 651) {document.getElementById("mouse").addEventListener("click", run);}
+        if (window.innerWidth > 650) {
         document.getElementById("mouse").addEventListener("click", clickRun);
-
+               
+           
+          
+       
 
         document.getElementById("mouse").addEventListener("mouseover", sad);
 
         document.getElementById("mouse").addEventListener("mouseout", normal);
+      }
 
       }, 5000);
 
       function clickRun() {
-
+         
         document.getElementById("mouse").removeEventListener("mouseout", normal);
         document.getElementById("mouse").removeEventListener("mouseover", sad);
         document.getElementById("mouse").addEventListener("mousemove", run);
@@ -554,7 +561,12 @@ function refuseIt(x, y, z) {
 
 
         setTimeout(function() {
+          if (window.innerWidth > 650) {
           document.getElementById("mouse").removeEventListener("mousemove", run);
+        }
+          if (window.innerWidth < 651) {
+          document.getElementById("mouse").removeEventListener("click", run);
+          }
           document.getElementById("refuse").style.display = "none";
           document.getElementById("accept").style.display = "none";
           document.getElementById("refuse").style.transform = "scale(1)";
