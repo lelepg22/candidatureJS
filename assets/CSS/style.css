@@ -958,6 +958,12 @@ h1{
     }}
     
     @media screen and (max-width: 650px){ 
+    #scene{
+      left:5% !important;
+      top:42% !important;
+      width: 93% !important;
+    }
+      
     #acceptTxt{
       margin-left:0% !important;
       width: -webkit-fit-content !important;
@@ -969,11 +975,32 @@ h1{
     #weather{
       width: 42%;
     }
+    .wbox{
+      margin-left: 0 !important;
+    }
+    #akuma{
+      right: -28% !important;
+      width: 100% !important;
+    }
+    #weatherBox{
+      min-width: 90% !important;
+      height: 20% !important;
+      top: 19% !important;
+      left: 0% !important;
+    }
+    #listArtists{
+      width: 90% !important;
+      left: 0% !important;
+      
+    }
     #codePostal{
       width:42%;
     }
     #artist{
       width:42%;
+    }
+    .tabs{
+      font-size: 1.3rem !important;
     }
     
     ul{
@@ -988,6 +1015,29 @@ h1{
     }
     #icons{
       width:101px !important;
+      margin-left: 14px !important;
+      
+  }
+  #framed{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  #form{
+    width: 72% !important;
+    left:26% !important;    
+  }
+  #ryu{
+    height: 54% !important;
+    width: 92% !important;
+    bottom: 8% !important;
+    left: -5% !important;
+  }
+  #recrut{
+    right: 1% !important;
+    height: 48% !important;
+    bottom: 8% !important;
+    width: 44% !important;
+  }
       
     }
     .icons{
@@ -1037,7 +1087,8 @@ h1{
       width: 10%;
     }
     #card{
-      width:unset;  
+      width:unset; 
+      font-size: 1.2rem; 
       
     }
     #list{
@@ -1071,12 +1122,17 @@ h1{
       }
       button{
        padding: 5px 14px !important;
+       font-size: 1.2rem !important;
       }
     
     .tab1{
       width:50% !important;
       min-height: unset !important;
       margin-left: 10%;
+      font-size:unset !important;
+    }
+    #tab2{ 
+      font-size:unset !important;
     }
     li{
       font-size: 0.8em !important;
