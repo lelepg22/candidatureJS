@@ -995,11 +995,14 @@ h1{
       
     }
     #lifebar2{
-      left: 22% !important;
+      left: 57% !important;
+      position: absolute !important;
+      top: 17% !important;
 
     }
     #ko{
       left: 37% !important; 
+      font-family: 'Courier New', Courier, monospace !important;
     }
     #listArtists{
       width: 90% !important;
