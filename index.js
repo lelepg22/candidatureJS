@@ -204,7 +204,7 @@ function start() {
 
     document.querySelector(".lds-heart").style.display = "none";
     document.querySelector("#showCandidat").style.display = "block"
-  }, 45000)
+  }, 4000)
 }
 
 let timer = 0;
@@ -618,13 +618,17 @@ function refuseIt(x, y, z) {
               style.sheet.insertRule('h1{z-index:1;}');
               document.getElementById("slider").remove();
               document.getElementById("curtain").style.display = 'block';
-              document.getElementById("curtain").insertAdjacentHTML("afterbegin", `<div id="show" style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/xkls6n?autoplay=1&nocontrols=1&loop=0" frameborder="0" width="100%" height="unset" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>`);
-              document.getElementById("plane").play();
+              if (window.innerWidth > 649) {
+              document.getElementById("curtain").insertAdjacentHTML("afterbegin", `<div id="show" style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/xkls6n?autoplay=1&muted=1&nocontrols=1&loop=0" frameborder="0" width="100%" height="unset" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>`);
+              document.getElementById("plane").play(); }
+              if (window.innerWidth < 650) {
+                document.getElementById("curtain").insertAdjacentHTML("afterbegin", `<div id="show" style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><img src="assets/img/street.gif" style="width:78vw;height:42vh;position:absolute;left:-28px;top:0px;overflow:hidden;"></img></div>`);
+                document.getElementById("plane").play(); }
                 if (localStorage.mute == 'true') {      
       document.getElementById("plane").muted = true;
     }
               document.getElementById("refuse").disabled = true;
-            }, 16000);
+            }, 16000); //*
           }
           setTimeout(function() {
             if (document.getElementById("curtain").style.display != "none") {

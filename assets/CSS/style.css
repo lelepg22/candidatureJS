@@ -955,7 +955,8 @@ h1{
     #weatherBox{
          z-index: 200;
       
-    }}
+    }
+  }
     
     @media screen and (max-width: 650px){ 
     #scene{
@@ -1061,7 +1062,7 @@ h1{
     width: 44% !important;
   }
       
-    }
+    
     .icons{
       display:-webkit-box;
       display:-ms-flexbox;
