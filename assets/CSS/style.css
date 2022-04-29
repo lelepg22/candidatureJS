@@ -1187,7 +1187,7 @@ h1{
       margin-left: 24px !important;
     }
     #times {
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family:fantasy, Verdana, Geneva, Tahoma, sans-serif !important;
             font-size: 1.7rem !important;
             top: 19.5% !important;
             left: 45% !important;
